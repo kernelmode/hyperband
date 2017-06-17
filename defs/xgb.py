@@ -25,7 +25,7 @@ space = {
 		'default',
 		hp.quniform( 'mcw_', 1, 10, 1 )
 	]),
-	
+
 	'subsample': hp.choice( 'ss', [
 		'default',
 		hp.uniform( 'ss_', 0.5, 1.0 )
@@ -37,7 +37,7 @@ space = {
 	'colsample_bylevel': hp.choice( 'cbl', [
 		'default',
 		hp.uniform( 'cbl_', 0.5, 1.0 )
-	]),	
+	]),
 	'gamma': hp.choice( 'g', [
 		'default',
 		hp.uniform( 'g_', 0, 1 )
@@ -71,11 +71,11 @@ def get_params():
 def try_params( n_iterations, params, get_predictions = False ):
 
 	n_estimators = int( round( n_iterations * trees_per_iteration ))
-	print "n_estimators:", n_estimators
+	print("n_estimators:", n_estimators)
 	pprint( params )
 
 	clf = XGB( n_estimators = n_estimators, nthread = -1, **params )
-	
-	return train_and_eval_sklearn_classifier( clf, data, get_predictions = get_predictions )
 
-	
+	return train_and_eval_sklearn_classifier( clf, data)
+
+
