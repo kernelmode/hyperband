@@ -1,5 +1,6 @@
-"function (and parameter space) definitions for hyperband"
-"binary classification with XGBoost"
+from __future__ import print_function
+"""function (and parameter space) definitions for hyperband
+binary classification with XGBoost"""
 
 from common_defs import *
 

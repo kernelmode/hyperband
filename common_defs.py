@@ -1,4 +1,5 @@
-"imports and definitions shared by various defs files"
+from __future__ import print_function
+"""imports and definitions shared by various defs files"""
 
 import numpy as np
 

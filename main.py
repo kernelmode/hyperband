@@ -1,7 +1,8 @@
 #!/usr/bin/env python
+from __future__ import print_function
 
-"a more polished example of using hyperband"
-"includes displaying best results and saving to a file"
+"""a more polished example of using Hyperband
+includes displaying best results and saving to a file"""
 
 import sys
 import pickle
